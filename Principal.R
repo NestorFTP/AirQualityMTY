@@ -2,8 +2,6 @@
 ########                            Calidad del Aire Monterrey                          ########
 ########                        Autor Néstor Felipe Torres Pacheco                      ########
 ################################################################################################
-
-
 #install.packages("jsonlite", repos="http://cran.r-project.org")
 #install.packages("curl")
 #install.packages("DT")
@@ -50,15 +48,13 @@ for(i in 2:pages){
 View(air_quality_mty_df)
 
 
+#Guardar Data en csv
+
+write.csv(air_quality_mty_df, "/home/nestor/Documentos/Projects/AirQualityMTY/data/data.csv", row.names = TRUE)
 
 
 
-
-
-
-
-
-
+#-----------------------------------------------------------------  
 #
 str(air_quality_mty)
 
